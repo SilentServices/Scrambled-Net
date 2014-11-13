@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:orientation="vertical" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:id="@+id/stats_view">
+            <TextView android:id="@+id/status_clicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clicks"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left" />
+            <TextView android:id="@+id/status_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/status_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode"
+                android:gravity="center" android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"/>
+                
+        <ImageButton android:id="@+id/menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/menu_button" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
+        
+        <com.silentservices.netscramble.BoardView android:id="@+id/board_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/menu_button" />
+            
+</RelativeLayout>
+

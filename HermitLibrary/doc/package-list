@@ -1,0 +1,11 @@
+ca.uol.aig.fftpack
+net.goui.util
+org.hermit.astro
+org.hermit.dsp
+org.hermit.geo
+org.hermit.geometry
+org.hermit.geometry.cluster
+org.hermit.geometry.generator
+org.hermit.geometry.spline
+org.hermit.geometry.voronoi
+org.hermit.utils

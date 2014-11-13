@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- App title. -->
+    <string name="title">超級網管</string>
+    
+    <string name="description">電腦網路益智遊戲。</string>
+
+
+    <!-- Splash screen / help text. -->
+    <string name="splash_text"><b>超級網管</b>\n\n透過旋轉區塊連線端子到伺服器。觸摸旋轉區塊, 或選擇並按軌跡球; 當您認為正確時按住區塊鎖定它, \n\n
+包括使用鍵盤, 您可以按 Z, N 或者 4 左旋轉;
+M, X 或者 6 右旋轉; 然後按空格或 0 鎖定。\n\n
+區塊的連線是加亮顯示的。使用功能表來選擇不同的級別, 暫停遊戲, 或者開始一個新遊戲。\n\n<b>按螢幕開始。</b></string>
+       
+    <string name="help_text"><b>超級網管</b>\n\n透過旋轉區塊連線端子到伺服器。  箭頭選擇區塊; 按 Z, N 或者 4 t左旋轉; M, X 或者 6 右旋轉; 如果您的裝置支援請按螢幕。當您認為它是正確時按空格鍵或 0 鎖定。\n\n區塊的連線是加亮顯示的。使用功能表來選擇不同的技能等級, 暫停遊戲, 或者開始一個新遊戲。\n\n<b>按螢幕恢復。</b></string>
+       
+    <string name="about_text"><b>超級網管</b> 基於 Andi Peredri, Thomas Nagy,
+和 Reinhold Kainhofer 的 KNetwalk。包括 David Beaumont
+的 MTRandom。由 Ian Cameron Smith 移植到 Android。  安卓網中文化 (HiAPK.com)\n\
+\n\
+有關資訊和源程式碼檢視項目首頁。\n\
+\n\
+這個程式是免費軟體; 您可以基於自由的通用 GNU 公共授權證基礎條件下重新發佈/或修改它; 授權證的第 2 版, 或
+(依您的選擇) 任何新版本。\n\
+\n\
+這一方案是發佈是希望這將是有益的,
+但沒有任何保證; 甚至沒有隱含適銷性或特定目的保證。詳情請參閱 GNU 通用公共授權證 http://www.gnu.org/licenses/gpl-2.0.html。\n</string>
+
+      
+    <!-- Help texts for specific skill levels. -->
+    <string name="help_master">在大師級別, 旋轉塊;
+單元右側邊緣連線到左側邊緣的, 反之亦然。同樣的在頂部和底部邊緣。</string>
+
+    <string name="help_insane">在瘋狂級別, 旋轉塊;
+單元右側邊緣連線到左側邊緣的, 反之亦然。同樣的在頂部和底部邊緣。但除了, 在單元 3 或 4 連線, 接線是看不見的。祝您好運!</string>
+
+
+    <!-- Text displayed in pause mode. -->
+    <string name="pause_text">\n\n<b>遊戲暫停</b>\n\n\n\n<b>按螢幕繼續。</b></string>
+
+
+    <!-- Win dialog strings. -->
+    <string name="win_title"><b>您贏了!</b></string>
+    <string name="win_text">恭喜!  在你解決了 %1$d 個難題:%2$02d, 使用 %3$d 次按。\n\n擊
+"新遊戲" 開始一個新的遊戲, 或者 "繼續" 嘗試此佈局。</string>
+    <string name="win_spares_text">恭喜!  在你解決了 %1$d 個難題:%2$02d, 使用 %3$d 次按, 與 %4$d 件遺留!\n\n按
+"新遊戲" 開始一個新的遊戲, 或者 "繼續" 嘗試此佈局。</string>
+    <string name="win_new">新遊戲</string>
+    <string name="win_continue">繼續</string>
+
+    <string name="about_title">關於</string>
+
+    <!-- Button strings. -->
+    <string name="button_ok">確定</string>
+    <string name="button_close">取消</string>
+    <string name="button_license">顯示授權</string>
+    <string name="button_homepage">首頁</string>
+    
+    
+    <!-- Menu strings. -->
+    <string name="menu_game_new">新遊戲</string>
+    <string name="menu_game_pause">暫停</string>
+    <string name="menu_set_skill">技能等級</string>
+    <string name="menu_sound">聲音...</string>
+    <string name="menu_help">說明</string>
+    <string name="menu_about">關於</string>
+    <string name="no_sounds">靜音</string>
+    <string name="quiet_sounds">輕微音量</string>
+    <string name="play_sounds">最大音量</string>
+    
+    
+    <!-- Skill levels. -->
+    <string name="skill_novice">新手</string>
+    <string name="skill_normal">普通</string>
+    <string name="skill_expert">專家</string>
+    <string name="skill_master">大師</string>
+    <string name="skill_insane">瘋狂</string>
+    
+    <!-- URLs. -->
+    <string name="url_license">http://www.gnu.org/licenses/gpl-2.0.html</string>
+    <string name="url_homepage">http://code.google.com/p/moonblink/wiki/ScrambledNet</string>
+
+</resources>

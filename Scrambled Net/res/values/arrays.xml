@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+    
+    <!-- Help section titles. -->
+    <string-array name="help_titles">
+		<item></item>
+		<item>Playing the Game</item>
+		<item>@array/help_play_titles</item>
+		<item>Skill Levels</item>
+		<item>Menu</item>
+		<item>Hints</item>
+		<item>@array/help_hint_titles</item>
+    </string-array>
+
+    <!-- Help section texts. -->
+    <string-array name="help_texts">
+
+<item><b>Scrambled Net</b> is a simple puzzle game which requires you to sort
+out the connections in a computer network, so that all the terminals are
+connected to the server.  The network is made up of tiles, and while all
+the tiles are in the right place, they have been rotated randomly into a
+useless mess.\n\
+\n\
+You need to rotate individual tiles to re-connect the network.
+Tiles which are connected to the server are shown highlighted.  When all
+terminals are connected, you\'ve won.\n\
+\n\
+It may seem simple at first, but try working your way up through the five
+difficulty levels.  You may think the novice level is a blast, but
+I guarantee it gets more challenging when some of the tiles are invisible!
+If it gets too hard, try the hints below.\n\
+\n\
+Use the menu to select different skill levels, pause the game, or start a new
+game.</item>
+
+<item>Scrambled Net can be played with the keyboard, the touchscreen,
+or a combination of both:</item>
+
+<item>@array/help_play_texts</item>
+
+<item>Scrambled Net has five levels of difficulty.  Higher skill levels
+have larger boards, and the most advanced levels have some special features:\n\
+\n\
+• <b>Novice</b> gives you a small board to play with.\n\
+\n\
+• <b>Normal</b> level has a somewhat larger board.\n\
+\n\
+• <b>Expert</b> level uses a large board.\n\
+\n\
+• <b>Master</b> level also uses a large board; but as an added challenge,
+the board \"wraps around\".  This means that a connection can go off the right
+edge, for example, and connect to the corresponding tile on the left edge;
+the same applies to the top and bottom edges.  Also, you\'ll find some 4-way
+connections thrown in to the mix.\n\
+\n\
+• <b>Insane</b> level is the same as Master, but with the wrinkle that all
+3-way and 4-way connections are invisible!  You\'ll find that you need to
+figure out a whole new set of deductions to complete an insane puzzle.  Be
+assured, though, that it <i>can</i> be done!\n\
+\n\
+One last note: to take full advantage of your device\'s capabilities, the
+actual number of tiles in a board is different for different devices.
+This means that Droid owners, for example, will find the game just a wee
+bit more challenging than it is on the Hero.</item>
+
+<item>The device\'s \"menu\" button pops up a menu containing a number
+of options:\n\
+\n\
+• <b>New game</b> starts a new game, abandoning the current game if any.\n\
+\n\
+• <b>Pause</b> pauses the game, and covers the screen.  Tap the screen
+to un-pause.\n\
+\n\
+• <b>High scores</b> displays a table of your personal best scores — both
+the fewest clicks in which you\'ve solved each difficulty level, and the
+fastest time.  You can use the menu to reset your scores.  Press \"Back\"
+to get back to the game.\n\
+\n\
+• <b>Skill level</b> prompts you to select a skill level, then starts
+a new game at that skill level.\n\
+\n\
+• <b>Solve it!</b> runs an autosolver to finish the current puzzle for you.
+If you get completely stuck, you can use this to see the solution — but
+you won\'t get personal best credit!  While solving, this menu item
+changes to a \"Stop\" button, so you can stop the autosolver at any time.\n\
+\n\
+• <b>Sound</b> lets you set your preferred sound effects level.  However,
+the sound effects volume can always be adjusted in the game using the hardware
+volume keys.  If no sound is coming out, try turning up the volume using
+the buttons.\n\
+\n\
+• <b>Animation</b> lets you turn the \"network data\" animation on or off.\n\
+\n\
+• <b>Help</b> displays this help.\n\
+\n\
+• <b>About</b> displays version and license information.</item>
+
+<item>Here are some hints that may prove useful
+as you work through the difficulty levels.</item>
+
+<item>@array/help_hint_texts</item>
+
+    </string-array>
+
+    <!-- Section titles for the play help. -->
+    <string-array name="help_play_titles">
+
+<item>Touchscreen</item>
+
+<item>Keyboard</item>
+
+    </string-array>
+
+    <!-- Section contents for the play help. -->
+    <string-array name="help_play_texts">
+
+<item>With the touchscreen, you can simply tap any tile to rotate it once
+clockwise.  Keep tapping until the tile is in the right orientation;
+if you need multiple turns to get it pointing the right way, that\'s still
+only counted as one click.\n\
+\n\
+You can lock a tile in place to remind yourself that you have it set
+correctly... or at least you think you do.  To lock a tile, press and hold
+the tile for a second; it will click and turn darker blue to indicate
+that it is locked.  If you try to rotate a locked tile, it will display a
+flashing highlight.  You can unlock it again by pressing and holding it.\n\
+\n\
+Bear in mind that locking a tile is no indication that it is correct.</item>
+
+<item>Using the keyboard, you can select tiles using trackball or directional
+keys.  The currently selected tile is drawn with a red highlight around it.
+Once you have selected a tile, press Z, N or 4 to rotate it left; M, X or
+6 to rotate right.\n\
+\n\
+You can lock a tile in place to remind yourself that you have it set
+correctly... or at least you think you do.  To lock a tile, press space or
+0 (zero).  The tile will click and turn darker blue to indicate
+that it is locked.  If you try to rotate a locked tile, it will display a
+flashing highlight.  You can unlock it again by pressing space or
+0 (zero).\n\
+\n\
+Bear in mind that locking a tile is no indication that it is correct.</item>
+
+    </string-array>
+    
+    <!-- Section titles for the hints help. -->
+    <string-array name="help_hint_titles">
+
+<item>Novice</item>
+
+<item>Normal</item>
+
+<item>Expert</item>
+
+<item>Master</item>
+
+<item>Insane</item>
+
+    </string-array>
+
+    <!-- Section contents for the hints help. -->
+    <string-array name="help_hint_texts">
+
+<item>The edges are a good place to start -- remember that a connection
+can never go off the edge of the board, so any tile which connects
+that way must be wrong.  If a tile connects out to the right, then the
+next tile to the right must connect back to the left.  In this way,
+once you have figured out one tile, you know something about the
+adjacent tiles.\n\
+\n\
+A tile which does <b>not</b> connect in a given direction also
+tells you something about the next tile in that direction.</item>
+
+<item>You can <i>sometimes</i> finish a level without using all the tiles;
+but you can <b>always</b> finish a level by using all the tiles.  So you
+may assume that all tiles must have a valid connection.\n\
+\n\
+Keep track of which tiles you <b>know</b> are correct by locking
+them -- press and hold a tile to lock it (see \"Playing the Game\"
+above).  But be sure that you really have them correct.</item>
+
+<item>Expert mode is just the same as before, only larger -- don\'t be
+discouraged!\n\
+\n\
+Terminals always have exactly one connection, and all terminals have to
+connect to the server.  If two terminals connect together without a
+branch, there\'s no way to hook them to the server; so that must be
+wrong.</item>
+
+<item>In Master level, the edges no longer help you.  Look for blocks of
+terminals together, and remember that two terminals can\'t be connected
+directly together.  When you figure out one tile, look for all possible
+deductions you can make based on it.</item>
+
+<item>In Insane level, you will need to make use of all the deductions you
+have figured out, plus at least one new one.  Remember that only 3-way
+and 4-way tiles are invisible; so an invisible tile can often tell you
+something about its neighbours.</item>
+
+    </string-array>
+    
+</resources>
+

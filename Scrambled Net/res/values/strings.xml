@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- App title. -->
+    <string name="title">Scrambled Net</string>
+    
+    <string name="description">A computer networking puzzle game.</string>
+
+
+    <!-- Splash screen / help text. -->
+    <string name="help_text"><b>Scrambled Net</b>\n\nConnect the
+terminals to the server by rotating the tiles.  Touch a tile to rotate
+it; press and hold a tile to lock it when you think it\'s correct.
+Use the menu to select different skill levels, pause the game, or start
+a new game.\n\n
+See the help in the menu for a full user\'s guide.\n\n
+<b>Tap the screen to start.</b></string>
+    <string name="splash_text"><b>Scrambled Net</b>\n\nConnect the
+terminals to the server by rotating the tiles.  Touch a tile to rotate
+it; press and hold a tile to lock it when you think it\'s correct.
+Use the menu to select different skill levels, pause the game, or start
+a new game.\n\n
+See the help in the menu for a full user\'s guide.\n\n
+<b>Tap the screen to start.</b></string>
+             
+    <!-- Help texts for specific skill levels. -->
+    <string name="help_master">At Master level, the board edges wrap around;
+cells on the right edge connect to those on the left edge, and vice
+versa.  Similarly for the top and bottom edges.</string>
+
+    <string name="help_insane">At Insane level, the board edges wrap around;
+cells on the right edge connect to those on the left edge, and vice
+versa.  Similarly for the top and bottom edges.  But in addition, in
+cells with 3 or 4 connections, the wiring is invisible.  Good luck!</string>
+       
+    <string name="about_text"><b>Scrambled Net</b>, an Android puzzle
+game by Ian Cameron Smith. Maintained by Michael Mueller.
+Inspired by KNetwalk by Andi Peredri, Thomas Nagy, and Reinhold Kainhofer.
+Includes MTRandom by David Beaumont.  Chinese translation by HiAPK.com.\n\
+\n\
+For information and source code see the project home page.\n\
+\n\
+This program is open-source software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.\n\
+\n\
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License at http://www.gnu.org/licenses/gpl-2.0.html
+for more details.\n</string>
+
+    <string name="eula_title">License Agreement</string>
+    
+    <string name="eula_text">Scrambled Net is distributed in the hope
+that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License at http://www.gnu.org/licenses/gpl-2.0.html
+for more details.\n\
+\n\
+This program is open-source software.  The source code
+can be obtained on the project home page; see the About screen.</string>
+
+    <!-- Help strings. -->
+    <string name="help_title">Scrambled Net User\'s Manual</string>
+
+
+    <!-- Scores list strings. -->
+    <string name="scores_title">Personal Bests</string>
+    <string name="scores_clickstitle">Fewest Clicks</string>
+    <string name="scores_timestitle">Fastest Time</string>
+    <string name="scores_skill">Skill Level</string>
+    <string name="scores_clicks">Clicks</string>
+    <string name="scores_time">Time</string>
+    <string name="scores_when">When</string>
+    <string name="menu_scores_reset">Reset all scores</string>
+        
+
+    <!-- Text displayed in pause mode. -->
+    <string name="pause_text">\n\n<b>Game Paused</b>\n\n\n\n<b>Tap
+the screen to continue.</b></string>
+
+
+    <!-- Win dialog strings. -->
+    <string name="win_title"><b>You win!</b></string>
+    <string name="win_pbest_title"><b>New Personal Best!</b></string>
+    <string name="win_text">Congratulations!  You solved the puzzle
+in %1$d:%2$02d, using %3$d clicks.</string>
+    <string name="win_spares_text">Congratulations!  You solved the puzzle
+in %1$d:%2$02d, using %3$d clicks, and with %4$d pieces left over!</string>
+    <string name="best_clicks_text">That\'s your best click count yet at this level!</string>
+    <string name="best_time_text">That\'s your fastest time yet at this level!</string>
+    <string name="best_both_text">That\'s your best click count and fastest time yet at this level!</string>
+    <string name="win_finish">Click "New Game" for a new game,
+or "Continue" to experiment with this layout.</string>
+    <string name="win_new">New Game</string>
+    <string name="win_continue">Continue</string>
+
+    <string name="about_title">About</string>
+
+    <!-- Button strings. -->
+    <string name="button_ok">OK</string>
+    <string name="button_close">Close</string>
+    <string name="button_license">Show license</string>
+    <string name="button_homepage">Home page</string>
+    
+    
+    <!-- Menu strings. -->
+    <string name="menu_game_new">New game</string>
+    <string name="menu_game_pause">Pause</string>
+    <string name="menu_show_scores">High scores</string>
+    <string name="menu_set_skill">Skill level</string>
+    <string name="menu_sound">Sound...</string>
+    <string name="menu_anim">Animation...</string>
+    <string name="menu_autosolve">Solve it!</string>
+    <string name="menu_stopsolve">Stop solving</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_about">About</string>
+    <string name="no_sounds">No sounds</string>
+    <string name="quiet_sounds">Quiet sounds</string>
+    <string name="play_sounds">Full sounds</string>
+    <string name="anim_off">No animation</string>
+    <string name="anim_on">Animation</string>
+    
+    
+    <!-- Skill levels. -->
+    <string name="skill_novice">Novice</string>
+    <string name="skill_normal">Normal</string>
+    <string name="skill_expert">Expert</string>
+    <string name="skill_master">Master</string>
+    <string name="skill_insane">Insane</string>
+    
+    <!-- URLs. -->
+    <string name="url_license">http://www.gnu.org/licenses/gpl-2.0.html</string>
+    <string name="url_homepage">https://www.silentservices.de</string>
+
+</resources>

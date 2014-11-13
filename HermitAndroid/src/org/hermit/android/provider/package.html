@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<body bgcolor="white">
+
+<p>A library of classes to facilitate the creating of table-based content
+providers.  Applications may use these classes to create a content
+provider with the minimum amount of code, while still retaining reasonable
+flexibility to implement custom behaviour.</p>
+
+<h3>Simple Usage</h3>
+
+<p>The basic usage model is this:
+
+<ul>
+<li>Create a subclass of {@link org.hermit.android.provider.DbSchema}
+    to define the schema of your content provider's database.  Use
+    inner classes which are subclasses of
+    {@link org.hermit.android.provider.TableSchema} to define the tables.
+<li>Create a subclass of {@link org.hermit.android.provider.TableProvider}
+    to implement the content provider.  In many cases this class will
+    consist only of a constructor which passes the schema to the
+    {@link org.hermit.android.provider.TableProvider} constructor.
+<li>Declare the provider in your manifest.
+</ul>
+
+<p>For a simple provider, it's really that easy.  All of the code for managing
+the database, and doing inserts, queries, etc., is provided for you.
+
+<h3>Handling Database Upgrade</h3>
+
+<p>The default implementation handles database upgrade by simply deleting
+the existing database, and creating a fresh one.  This is something that
+many applications will wish to improve on, and you can do this by providing
+a custom subclass of {@link org.hermit.android.provider.DatabaseHelper}.
+
+<p>To do this, first create your helper subclass.  Override
+{@link
+org.hermit.android.provider.DatabaseHelper#onUpgrade(SQLiteDatabase, int, int)}
+and any other methods you need.  Then, in your
+{@link org.hermit.android.provider.TableProvider} subclass, override
+{@link org.hermit.android.provider.TableProvider#getHelper()} to return
+an instance of your database helper.
+
+<h3>Example</h3>
+
+<p>The following example illustrates a very simple provider, which is the
+basis for an app logging broadcast events.
+
+<p>First, the schema definition:
+
+<pre>
+package org.hermit.broadtest.provider;
+
+import org.hermit.android.provider.DbSchema;
+import org.hermit.android.provider.TableSchema;
+
+import android.net.Uri;
+
+/**
+ * Class encapsulating the schema for the broadcast content provider.
+ */
+public class BroadcastSchema
+    extends DbSchema
+{
+
+    private static final String DATABASE_NAME = "broadcasts";
+
+    // Current schema version.
+    private static final int SCHEMA_VERSION = 2;
+    
+    // Provider authority name.
+    private static final String AUTHORITY = "com.bn.provider.Broadcast";
+
+    public static final class BroadcastTable
+        extends TableSchema
+    {
+        
+        // Name of the broadcasts table.
+        private static final String TABLE_NAME = "broadcasts";
+
+        // Base MIME type for the broadcasts table.
+        private static final String TABLE_TYPE = "vnd.bn.broadcast";
+        
+        /**
+         * The content:// style URL for the broadcasts table.
+         */
+        public static final Uri CONTENT_URI =
+                        Uri.parse("content://" + AUTHORITY + "/broadcasts");
+
+        /**
+         * The default sort order for the broadcasts table.
+         */
+        public static final String SORT_ORDER = "time DESC";
+
+        /**
+         * Broadcast table field: the title of the broadcast.
+         */
+        public static final String TITLE = "title";
+
+        /**
+         * Broadcast table field: any extras that came with the broadcast.
+         */
+        public static final String EXTRAS = "extras";
+
+        /**
+         * Broadcast table field: the timestamp for when the broadcast was
+         * received.
+         */
+        public static final String TIME = "time";
+
+        // Definitions of the fields.
+        private static final String[][] FIELDS = {
+            { TITLE, "TEXT" },
+            { EXTRAS, "TEXT" },
+            { TIME, "INTEGER" },
+        };
+
+        /**
+         * A default projection which gets all the fields of the broadcast
+         * table.
+         */
+        public static final String[] PROJECTION = makeProjection(FIELDS);
+        
+        /**
+         * Create a broadcasts table schema instance.
+         */
+        protected BroadcastTable() {
+            super(TABLE_NAME, TABLE_TYPE, CONTENT_URI, SORT_ORDER, FIELDS);
+        }
+
+    }
+
+    /**
+     * Create a broadcast database schema instance.
+     */
+    protected BroadcastSchema() {
+        super(DATABASE_NAME, SCHEMA_VERSION, AUTHORITY, TABLE_SCHEMAS);
+    }
+
+    // Our table schemas.
+    private static final TableSchema[] TABLE_SCHEMAS = {
+        new BroadcastTable(),
+    };
+    
+}
+</pre>
+
+<p>With that, the provider itself is trivial:
+
+<pre>
+package org.hermit.broadtest.provider;
+
+import org.hermit.android.provider.TableProvider;
+
+/**
+ * Content provider for stored broadcast events.
+ */
+public class BroadcastProvider
+    extends TableProvider
+{
+
+    /**
+     * Create an instance of this content provider.
+     */
+    public BroadcastProvider() {
+        super(new BroadcastSchema());
+    }
+    
+}
+</pre>
+
+<p>And finally, the manifest:
+
+<pre>
+        &lt;provider android:name=".provider.BroadcastProvider"
+            android:authorities="com.bn.provider.Broadcast" /&gt;
+</pre>
+
+</body>
+</html>

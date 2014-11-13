@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+
+	<com.silentservices.netscramble.BoardView android:id="@+id/board_view"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            />
+	
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/status_bar"
+		android:orientation="horizontal">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/status_clicks"
+			android:text="Clicks" android:layout_gravity="left"
+			android:layout_weight="1" android:gravity="left"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/status_mode"
+			android:text="Mode" android:layout_gravity="center"
+			android:layout_weight="1" android:gravity="center"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/status_time"
+			android:text="Time" android:layout_gravity="right" android:gravity="right"
+			android:layout_weight="1"></TextView>
+	</LinearLayout>
+</LinearLayout>
+

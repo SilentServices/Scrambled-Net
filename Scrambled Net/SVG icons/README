@@ -1,0 +1,7 @@
+This directory contians the SVG masters for the icons used in the game, except
+for some of the background tiles which are mastered as the PNG files in
+the res/drawable directory.
+
+Some day Android will support SVG icons and we can just use these files directly.
+Until the, the Make script is used to generate the PNG files which are then
+moved manually into the res/drawable directory.
